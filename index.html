@@ -7,13 +7,16 @@
 
     <!-- Styles -->
      <link rel="stylesheet" href="style.css">
+
+     <!-- Scripts -->
+      <script src="script.js"></script>
 </head>
-<body class="dark-mode">
+<body class="">
     <nav>
         <div id="nav-content">
-            <button class="primary flex-1">Dark mode</button>
-            <h2 class="primary flex-1 center">My Portfolio</h2>
-            <button class="primary flex-1">Dark mode</button>
+            <button id="dark-mode-button" class="primary">Dark mode</button>
+            <h2>My Portfolio</h2>
+            <h3 class="secondary-text">&copy;Gustavo Rodriguez</h3>
         </div>
     </nav>
     
@@ -22,34 +25,44 @@
             <h1>I don't have a portfolio yet</h1>
             <p>This is a list of some projects I have made</p>
         </header>
+
         <div id="main-content">
+            <!-- Github Links -->
             <section>
                 <h2>Github Links</h2>
                 <div class="links">
-                    <a href="https://github.com/grcubes">Personal Account - grcubes</a>
-                    <a href="https://github.com/gus-srod-bcit">School Account - gus-srod-bcit</a>
+                    <a target="_blank" href="https://github.com/grcubes">Personal Account - grcubes</a>
+                    <a target="_blank" href="https://github.com/gus-srod-bcit">School Account - gus-srod-bcit</a>
                 </div>
             </section>
 
+            <!-- Itch.io -->
             <section>
-                <h2>Itch</h2>
+                <h2>Itch.io</h2>
                 <div class="links">
-                    <a href="https://grcubes.itch.io">https://grcubes.itch.io</a>
+                    <a target="_blank" href="https://grcubes.itch.io">https://grcubes.itch.io</a>
                 </div>
             </section>
 
+            <!-- Projects -->
             <section>
-                <h2>School Projects</h2>
-                <div class="links">
-                    <a href="https://dtc03-e6c5d.web.app/index.html">FridgeTracker</a>
+                <h2>Projects</h2>
+                <!-- School -->
+                <div>
+                    <h3>School Projects</h3>
+                    <div class="links">
+                        <a target="_blank" href="https://dtc03-e6c5d.web.app/index.html">FridgeTracker</a>
+                    </div>
                 </div>
-            </section>
-
-            <section>
-                <h2>Personal Projects</h2>
-                <div class="links">
-                    <a href="https://github.com/grcubes/quick-clipboard-image-save">Quick Clipboard Image Save</a>
-                    <a href="https://github.com/grcubes/simple-genshin-dialogue-skip">Simple Genshin Dialogue Skip</a>
+                <!-- Personal -->
+                <div>
+                    <h3>Personal Projects</h3>
+                    <div class="links">
+                        <a target="_blank" href="https://github.com/grcubes/quick-clipboard-image-save">Quick Clipboard Image Save</a>
+                        <a target="_blank" href="https://github.com/grcubes/simple-genshin-dialogue-skip">Simple Genshin Dialogue Skip</a>
+                        <br>
+                        <a target="_blank" href="https://github.com/gus-srod-bcit/portfolio-website">Portfolio Website</a>
+                    </div>
                 </div>
             </section>
         </div>

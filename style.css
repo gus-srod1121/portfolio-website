@@ -2,9 +2,10 @@
 {
     /* Light mode */
     --light-text-color: #000000;
+    --light-secondary-text-color: #222222;
 
     --light-bg-color: #FFFFFF;
-    --light-bg-secondary-color: #CCCCCC;
+    --light-bg-secondary-color: #EEEEEE;
 
     --light-button-primary-text: var(--light-text-color);
     --light-button-primary-bg-color: #DDDDFF;
@@ -15,6 +16,7 @@
 
     /* Dark mode */
     --dark-text-color: #FFFFFF;
+    --dark-secondary-text-color: #888888;
 
     --dark-bg-color: #111111;
     --dark-bg-secondary-color: #222222;
@@ -29,6 +31,7 @@
 body 
 {
     --text-color: var(--light-text-color);
+    --secondary-text-color: var(--light-secondary-text-color);
 
     --bg-color: var(--light-bg-color);
     --secondary-bg-color: var(--light-bg-secondary-color);
@@ -42,7 +45,6 @@ body
 
     padding: 0px;
     margin: 0px;
-    box-sizing: border-box;
 
     color: var(--text-color);
     background-color: var(--bg-color);
@@ -52,6 +54,7 @@ body
 body.dark-mode
 {
     --text-color: var(--dark-text-color);
+    --secondary-text-color: var(--dark-secondary-text-color);
 
     --bg-color: var(--dark-bg-color);
     --secondary-bg-color: var(--dark-bg-secondary-color);
@@ -63,14 +66,25 @@ body.dark-mode
     --anchor-clicked-text-color: var(--dark-anchor-clicked-text-color);
 }
 
+body>*
+{
+    padding: 2vh 4vw;
+    box-sizing: border-box;
+}
+
+
+
 nav
 {
-    background-color: var(--dark-bg-secondary-color);
+    background-color: var(--secondary-bg-color);
 
     position: sticky;
     top: 0; left: 0;
+}
 
-    width: 100%;
+header
+{
+    margin: 120px, 0px;
 }
 
 
@@ -78,6 +92,7 @@ nav
 button
 {
     padding: 1vh 2vw;
+    border: 1px solid var(--text-color);
 }
 
 a:link
@@ -98,21 +113,38 @@ div.links
     flex-direction: column;
 }
 
-button.primary
-{
-    color: var(--button-primary-text-color);
-    background-color: var(--button-primary-bg-color);
-}
-
 
 
 #nav-content
 {
-    width: inherit;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
 
-    box-sizing: border-box;
-    padding: 0px 5vw;
+#nav-content>*
+{
+    text-align: center;
+}
+
+
+
+.primary, .primary-text
+{
+    color: var(--button-primary-text-color);
+}
+
+.primary, .primary-bg
+{
+    background-color: var(--button-primary-bg-color);
+}
+
+.secondary, .secondary-text
+{
+    color: var(--secondary-text-color);
+}
+
+.secondary, .secondary-bg
+{
+    background-color: var(--secondary-bg-color);
 }
