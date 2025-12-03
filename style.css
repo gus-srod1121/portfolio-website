@@ -9,6 +9,8 @@
 
     --light-button-primary-text: var(--light-text-color);
     --light-button-primary-bg-color: #DDDDFF;
+    --light-button-primary-hover-bg-color: #AAAADD;
+    --light-button-primary-active-bg-color: #9988DD;
 
     --light-anchor-text-color: #2222DD;
     --light-anchor-clicked-text-color: #7722AA;
@@ -23,6 +25,8 @@
 
     --dark-button-primary-text: var(--dark-text-color);
     --dark-button-primary-bg-color: #443355;
+    --dark-button-primary-hover-bg-color: #AAAADD;
+    --dark-button-primary-active-bg-color: #9988DD;
 
     --dark-anchor-text-color: #2222DD;
     --dark-anchor-clicked-text-color: #7722AA;
@@ -38,6 +42,8 @@ body
 
     --button-primary-text-color: var(--light-button-primary-text);
     --button-primary-bg-color: var(--light-button-primary-bg-color);
+    --button-primary-hover-bg-color: var(--light-button-primary-hover-bg-color);
+    --button-primary-active-bg-color: var(--light-button-primary-active-bg-color);
 
     --anchor-text-color: var(--light-anchor-text-color);
     --anchor-clicked-text-color: var(--light-anchor-clicked-text-color);
@@ -61,6 +67,8 @@ body.dark-mode
 
     --button-primary-text-color: var(--dark-button-primary-text);
     --button-primary-bg-color: var(--dark-button-primary-bg-color);
+    --button-primary-hover-bg-color: var(--dark-button-primary-hover-bg-color);
+    --button-primary-active-bg-color: var(--dark-button-primary-active-bg-color);
     
     --anchor-text-color: var(--dark-anchor-text-color);
     --anchor-clicked-text-color: var(--dark-anchor-clicked-text-color);
@@ -93,6 +101,8 @@ button
 {
     padding: 1vh 2vw;
     border: 1px solid var(--text-color);
+
+    transition-duration: 200ms;
 }
 
 a:link
@@ -129,14 +139,20 @@ div.links
 
 
 
-.primary, .primary-text
+button.primary
 {
     color: var(--button-primary-text-color);
+    background-color: var(--button-primary-bg-color);
 }
 
-.primary, .primary-bg
+button.primary:hover
 {
-    background-color: var(--button-primary-bg-color);
+    background-color: var(--button-primary-hover-bg-color);
+}
+
+button.primary:active
+{
+    background-color: var(--button-primary-active-bg-color);
 }
 
 .secondary, .secondary-text
