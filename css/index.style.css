@@ -253,6 +253,7 @@ button.primary:active
     border-radius: 1rem;
     border: 1px solid rgba(0, 0, 0, 0.08);
     background-color: var(--secondary-bg-color);
+<<<<<<< Updated upstream:css/index.style.css
     color: var(--secondary-text-color);
 
     display: flex;
@@ -315,4 +316,27 @@ button.primary:active
 {
     opacity: 1;
     max-height: 200px;
+=======
+}
+
+
+#banner-header
+{
+    height: 50vh;
+    width: 100vw;
+    object-fit: cover;
+    z-index: 0;
+}
+
+header::before
+{
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#bannertitle-header
+{
+    inset: 0;
+    z-index: 2;
+>>>>>>> Stashed changes:style.css
 }
