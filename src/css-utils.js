@@ -21,10 +21,11 @@ function applyCss(_class, _abstractElement)
     const endIndex = _class.indexOf("]");
     
     const cssProperty = _class.substring(0, startIndex-1);
-    const cssValue = _class.substring(startIndex+1, endIndex);
+    const cssValue = _class.substring(startIndex+1, endIndex).split(",").join(" ");
+    
     _abstractElement.style[cssProperty] = cssValue;
 
-    console.log(`Apply gap of ${cssValue} to _abstractElement`);
+    // console.log(`Apply gap of ${cssValue} to ${_abstractElement.tagName} element`);
 }
 
 function setup()
