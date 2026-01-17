@@ -4,8 +4,10 @@
  */
 function processAbstractClass(abstractElement)
 {
-    abstractElement.classList.forEach(_class => {
-        applyCss(_class, abstractElement);
+    abstractElement.classList.forEach(_cssClass => {
+        if (!_cssClass.includes("-[")) return;
+        
+        applyCss(_cssClass, abstractElement);
         return;
     });
 }
@@ -24,14 +26,14 @@ function applyCss(_class, _abstractElement)
     const cssValue = _class.substring(startIndex+1, endIndex).split(",").join(" ");
     
     _abstractElement.style[cssProperty] = cssValue;
-
-    // console.log(`Apply gap of ${cssValue} to ${_abstractElement.tagName} element`);
+    console.log(`Apply ${cssProperty} of ${cssValue} to ${_abstractElement.tagName} element`);
 }
 
 function setup()
 {
     const abstractClassElements = document.querySelectorAll("[class*='-[']");
-    abstractClassElements.forEach(processAbstractClass);
+    // abstractClassElements.forEach(processAbstractClass);
+    addEventListener("DOMContentLoaded", abstractClassElements.forEach(processAbstractClass));
 }
 
 setup();
