@@ -46,7 +46,7 @@ main, footer
 
 section
 {
-    padding: 0px 4vw;
+    padding: 25px 4vw;
 }
 
 header
@@ -94,13 +94,6 @@ main
     z-index: 0;
 }
 
-header::before
-{
-    width: 100vw;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-}
-
 @keyframes title-scroll
 {
     from { transform: translateY(0); }
@@ -109,6 +102,9 @@ header::before
 
 #banner-title-header
 {
+    margin: 0px;
+    padding: 0px;
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -127,15 +123,6 @@ header::before
     animation-range: 0px 100vh;
 }
 
-.darken-div
-{
-    position: absolute;
-    inset: 0;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 1;
-    pointer-events: none;
-}
-
 #headshot-aboutme
 {
     width: 30vw;
@@ -146,7 +133,6 @@ header::before
     overflow: hidden;
     object-fit: cover;
 }
-
 
 
 
@@ -181,6 +167,8 @@ header::before
     border-radius: 15px;
     box-shadow: 0px 5px 10px var(--shadow-color);
     overflow: hidden;
+
+    
 }
 
 .project-img
@@ -193,16 +181,42 @@ header::before
     padding: 10px;
 
     display: flex;
+    flex: 1 1 100%;
     flex-direction: column;
     justify-content: left;
 }
 
 .project-title
 {
+    font-size: 1.5em;
+    margin: 5px;
+    padding: 0px;
+}
 
+.project-container
+{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+    flex: 1 1 100%;
+    justify-content: space-between;
+
+    margin: 5px;
+    padding: 0px;
 }
 
 .project-desc
 {
+    margin: 0px;
+    padding: 0px;
+}
 
+.project-tools
+{
+    margin: 0px;
+    padding: 0px;
+
+    font-size: 0.8em;
+    font-weight: bold;
 }

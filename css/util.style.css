@@ -25,6 +25,7 @@
 {
     display: flex;
     justify-content: center;
+    font-weight:300;
 }
 
 .items-center, .center
@@ -37,4 +38,32 @@
 {
     display: flex;
     justify-content: space-between;
+}
+
+.overlay
+{
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.hover-overlay
+{
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    opacity: 0;
+
+    transition: opacity var(--animation-time) ease;
+}
+
+.hover-overlay:hover
+{
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    opacity: 1;
+
+    width: 45vw;
 }

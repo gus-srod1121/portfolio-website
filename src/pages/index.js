@@ -21,6 +21,7 @@ function displayProjects()
 
         projectInstance.querySelector(".project-title").textContent = project.name;
         projectInstance.querySelector(".project-desc").textContent = project.desc;
+        projectInstance.querySelector(".project-tools").textContent = project.tools;
 
         const img = projectInstance.querySelector(".project-img");
         img.src = project.img;

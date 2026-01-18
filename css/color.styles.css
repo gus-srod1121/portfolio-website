@@ -1,19 +1,20 @@
 :root
 {
     /* Colors */
-    ---text-color: none;
-    ---secondary-text-color: none;
+    --text-color: none;
+    --secondary-text-color: none;
     
     ---bg-color: none;
     ---bg-secondary-color: none;
+    --bg-highlight-color: none;
     
-    ---button-primary-text: none;
-    ---button-primary-bg-color: none;
-    ---button-primary-hover-bg-color: none;
-    ---button-primary-active-bg-color: none;
+    --button-primary-text: none;
+    --button-primary-bg-color: none;
+    --button-primary-hover-bg-color: none;
+    --button-primary-active-bg-color: none;
     
-    ---anchor-text-color: none;
-    ---anchor-clicked-text-color: none;
+    --anchor-text-color: none;
+    --anchor-clicked-text-color: none;
 }
 
 
@@ -25,6 +26,7 @@ body
     
     --bg-color: #FFFFFF;
     --bg-secondary-color: #CCCCCC;
+    --bg-highlight-color: #EEDDFF;
     
     --button-primary-text: var(--text-color);
     --button-primary-bg-color: #DDDDFF;
@@ -46,6 +48,7 @@ body.dark-mode
 
     --bg-color: #222222;
     --bg-secondary-color: #555555;
+    --bg-highlight-color: #443355;
 
     --button-primary-text: var(--text-color);
     --button-primary-bg-color: #443355;
@@ -55,6 +58,7 @@ body.dark-mode
     --anchor-text-color: #5555FF;
     --anchor-clicked-text-color: #7722AA;
 }
+
 
 
 .primary-text, .primary
@@ -78,6 +82,7 @@ button.primary:active
 }
 
 
+
 .secondary-text, .secondary
 {
     color: var(--secondary-text-color);
@@ -89,8 +94,14 @@ button.primary:active
 }
 
 
+.highlight
+{
+    background-color: var(--bg-highlight-color);
+}
 
 
+
+/* #region ScrollBar */
 #projects::-webkit-scrollbar
 {
     height: 16px;
@@ -118,3 +129,4 @@ button.primary:active
 {
     background: var(--secondary-text-color);
 }
+/* #endregion */

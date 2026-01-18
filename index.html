@@ -41,14 +41,14 @@
 
     <header>
         <h1 id="banner-title-header">Gustavo Rodriguez</h1>
-        <div>
-            <div class="darken-div"></div>
+        <div id="banner-holder">
+            <div class="overlay background-[rgba(0,0,0,0.5)]"></div>
             <img src="assets/headerbanner.png" id="banner-header">
         </div>
     </header>
 
     <main>
-        <div id="main-content">
+        <div id="main-content" class="flex flex-col">
             <!--
             SECTIONS
                 - About me
@@ -58,9 +58,9 @@
             -->
             
             <section id="about-me">
-                <div class="flex-row gap-[4vw]">
+                <div class="flex-row gap-[4vw] padding-[0px]">
                     <div>
-                        <img src="assets/headshot.png" id="headshot-aboutme" class="height-img">
+                        <img src="assets/headshot.png" id="headshot-aboutme" class="height-img logo">
                     </div>
                     <div class="flex-col justify-center">
                         <h2>Hello</h2>
@@ -77,12 +77,11 @@
             </section>
 
             <!-- EXPERIENCE (itch.io) -->
-            <section>
-                <h1>Experience</h1>
-                <div class="flex-row">
-                    <div id="exp-logos" class="width-[20vw]">
-                        <img src="assets/unitylogo.png">
-                        <img src="assets/unitylogo.png">
+            <section id="experience" class="highlight">
+                <div class="flex-row gap-[4vw]">
+                    <div>
+                        <div><img src="assets/unitylogo.png" class="height-img logo"></div>
+                        <div><img src="assets/unitylogo.png" class="height-img logo"></div>
                     </div>
                     <div class="flex-col justify-center">
                         <p>
@@ -102,7 +101,7 @@
 
             <!-- PROJECTS -->
              <section class="padding-[0px]">
-                <h1 class="padding-[0px,4vw]">Projects</h1>
+                <h1 class="padding-[0px-4vw]">Projects</h1>
                 <div id="projects"></div>
              </section>
         </div>
@@ -115,21 +114,22 @@
 
     <template id ="project-template">
         <div class="project">
+            <div class="hover-overlay !background-[rgba(255,150,200,0.4)]"></div>
             <img class="project-img" src="">
             <div class="project-caption">
                 <h3 class="project-title">Project Name</h3>
-                <div class="flex flex-col justify-between">
+                <div class="project-container">
                     <p class="project-desc">Description</p>
-                    <p class="project-tools fontWeight-[500]">Tools</p>
+                    <p class="project-tools">Tools</p>
                 </div>
             </div>
         </div>
     </template>
 
     <!-- Scripts -->
-    <script src="src/css-utils.js"></script>
     <script src="src/darkmode.js"></script>
     <script src="src/nav-scroll.js"></script>
+    <script src="src/css-utils.js"></script>
 
     <!-- Page Script -->
      <script type="module" src="src/pages/index.js"></script>
