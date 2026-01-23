@@ -167,12 +167,12 @@ main
     border-radius: 15px;
     box-shadow: 0px 5px 10px var(--shadow-color);
     overflow: hidden;
-
-    
 }
 
 .project-img
 {
+    height: auto;
+    max-height: 400px;
     width: 100%;
 }
 
@@ -184,6 +184,8 @@ main
     flex: 1 1 100%;
     flex-direction: column;
     justify-content: left;
+
+    z-index: 2;
 }
 
 .project-title
