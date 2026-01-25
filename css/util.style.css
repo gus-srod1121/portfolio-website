@@ -48,7 +48,7 @@
     pointer-events: none;
 }
 
-.hover-overlay
+.hover-overlay, .hover-overlay-reverse
 {
     position: absolute;
     display: block;
@@ -65,4 +65,20 @@
 .hover-overlay:hover
 {
     opacity: 1;
+}
+
+.hover-overlay:hover
+{
+    opacity: 1;
+}
+
+.hover-overlay-reverse
+{
+    opacity: 1;
+    transition: opacity var(--animation-time) ease;
+}
+
+.hover-overlay-reverse:hover
+{
+    opacity: 0;
 }

@@ -169,6 +169,12 @@ main
     overflow: hidden;
 }
 
+.project-img-container
+{
+    position: relative;
+    display: flex;
+}
+
 .project-img
 {
     height: auto;
@@ -195,7 +201,7 @@ main
     padding: 0px;
 }
 
-.project-container
+.project-text-container
 {
     display: flex;
     flex-direction: column;
