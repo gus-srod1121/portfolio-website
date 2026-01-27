@@ -61,6 +61,7 @@
                         <p>
                             I enjoy building gameplay systems, experimenting with mechanics, and iterating quickly through prototyping and playtesting.
                         </p>
+                        <br>
                         <p>In the goldilocks story, I am the third soup. Juuuust right.</p>
                     </div>
                 </div>
@@ -79,11 +80,13 @@
                 <p>I've composed all the music I've used in my games and other stuff. I'm still a beginner but I love making music.</p>
                 <p>I taught myself to play the piano and violin. Unlike riding a bike, I sometimes forget and need to reteach myself. I've studied a lot of music theory to make up for it.</p>
                 <p>Here are the better ones I've composed. They were all made in BandLab on browser, because an FL Studio license is $129 CAD holy.</p>
-                <p class="bold">VOLUME WARNING</p>
+                
+                <div class="margin-[4vh-0px]"></div>
 
-                <div id="music-container"></div>
+                <h3>VOLUME WARNING</h3>
+                <div id="music-container" class="flex-col gap-[2vh]"></div>
 
-                <p><a href="projects.html" class="bold">Here</a> is the rest of the music. Most others are incomplete, but they are still mine.</p>
+                <p><a href="projects.html" target="_blank" class="margin-top-[25px] bold">Here is the rest of the music.</a> Most others are incomplete, but they are still mine.</p>
              </section>
         </div>
     </main>
@@ -110,7 +113,10 @@
     </template>
 
     <template id ="music-template">
-        <audio class="music-player" controls></audio>
+        <div class="music highlight flex flex-row gap-[1vw]">
+            <h3 class="music-name">Song Name</h3>
+            <audio class="music-player flex-basis-[20%]" controls></audio>
+        </div>
     </template>
 
     <!-- Scripts -->

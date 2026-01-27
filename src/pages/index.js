@@ -42,8 +42,21 @@ function displayMusic()
     music.forEach(song => {
         const songInstance = template.content.cloneNode(true);
 
+        songInstance.querySelector(".music-name").textContent = song.name;
         const musicPlayer = songInstance.querySelector(".music-player");
         musicPlayer.src = song.audioFilePath;
+        musicPlayer.volume = song.startingVolume * 0.01;
+
+        musicPlayer.addEventListener("play", (event) => {
+            const allPlayers = document.querySelectorAll(".music-player");
+            
+            allPlayers.forEach(player => {
+                if (player !== event.target)
+                {
+                    player.pause();
+                }
+            });
+        });
 
         musicContainer.appendChild(songInstance);
     })

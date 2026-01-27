@@ -5,6 +5,12 @@ body
     margin: auto;
 }
 
+p
+{
+    padding: 0px;
+    margin: 5px;
+}
+
 a
 {
     text-decoration: none;

@@ -32,7 +32,6 @@ function applyCss(_class, _abstractElement)
 
 function setup()
 {
-    // abstractClassElements.forEach(processAbstractClass);
     addEventListener("DOMContentLoaded", () => {
         const abstractClassElements = document.querySelectorAll("[class*='-[']");
         abstractClassElements.forEach(processAbstractClass)

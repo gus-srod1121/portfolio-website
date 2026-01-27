@@ -154,11 +154,23 @@ main
     flex-wrap: nowrap;
     overflow-x: scroll;
 
-    padding: 20px 5vw;
+    padding: 20px 4vw;
     gap: 20px;
 }
 
 #project-container::-webkit-scrollbar-track
 {
-    margin: 0 5vw; 
+    margin: 0 4vw; 
+}
+
+
+
+.music
+{
+    padding: 1vmax;
+
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px var(--shadow-color);
+
+    max-width: 60vw;
 }
