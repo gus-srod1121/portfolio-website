@@ -15,10 +15,10 @@ function createNavbar()
             <div class="text-align-[center] flex-basis-[30%]">
                 <!-- INDEX -->
                 <section class="flex flex-row gap-[1vw]">
-                    <a href="#about-me">
-                        <p class="secondary-text resizing-text text-hover decorated" style="--target-font-size: 1.5vw;">About me</p>
+                    <a href="index.html">
+                        <p class="secondary-text resizing-text text-hover decorated" style="--target-font-size: 1.5vw;">Index</p>
                     </a>
-                    <a href="#projects-section">
+                    <a href="projects.html">
                         <p class="secondary-text resizing-text text-hover decorated" style="--target-font-size: 1.5vw;">Projects</p>
                     </a>
                     <a href="contact.html">
