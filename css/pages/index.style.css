@@ -1,10 +1,7 @@
 body 
 {
     /* MY VARS */
-    --standard-padding: 2vh 4vw;
     --banner-height: 60vh;
-
-    --shadow-color: rgba(0, 0, 0, 0.3);
 }
 
 nav
@@ -70,19 +67,6 @@ main
 {
     position: relative;
     background-color: var(--bg-color);
-}
-
-#dark-mode-button
-{
-    padding: 0.5vw;
-    font-size: 0; /* hide any text */
-}
-
-#dark-mode-button svg
-{
-    width: 24px;
-    height: 24px;
-    display: block;
 }
 
 #banner-header

@@ -17,6 +17,8 @@
     
     --anchor-text-color: none;
     --anchor-clicked-text-color: none;
+
+    --shadow-color: rgba(0, 0, 0, 0.3);
 }
 
 
