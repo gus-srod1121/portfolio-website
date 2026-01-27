@@ -20,13 +20,17 @@
     <nav></nav>
 
 
-    <main>
+    <main class="flex-row">
         <!-- SEARCH & FILTER -->
-        <section id="filter-section">
-            <div class="flex-row gap-[2vw] flex-wrap align-center">
-                <input type="text" id="project-search" placeholder="Search project..." class="padding-[10px] border-radius-[5px] flex-basis-[300px]">
-                
-                <div id="category-filters" class="flex-row gap-[1vw] flex-wrap"></div>
+        <section id="filter-section" class="secondary-bg">
+            <div class="query flex">
+                <div class="search">
+                    <input type="text" id="project-search" placeholder="Search projects...">
+                </div>
+                <div class="filters">
+                    <h2>Categories</h2>
+                    <div id="category-filters" class=""></div>
+                </div>
             </div>
         </section>
 

@@ -28,6 +28,7 @@ a
 }
 
 
+
 button
 {
     padding: 1vh 2vw;
@@ -35,6 +36,14 @@ button
 
     transition: background-color 200ms;
 }
+
+
+
+input[type=text]
+{
+    border-radius: 5px;   
+}
+
 
 
 img

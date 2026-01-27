@@ -8,6 +8,14 @@
     gap: 20px;
 }
 
+
+
+#filter-section
+{
+    padding: 2vh 2vw;
+    width: 30vw;
+}
+
 .filter-tag
 {
     color: var(--text-color);
@@ -29,19 +37,35 @@
     background-color: var(--primary-highlight-color);
 }
 
-#project-search {
+
+
+#project-search
+{
     border: 2px solid var(--bg-secondary-color);
     background: var(--bg-color);
     color: var(--text-color);
     outline: none;
+
+    width: 100%;
 }
 
-#project-search:focus {
+#project-search:focus
+{
     border-color: var(--heading-color);
 }
 
-section
+
+
+.query
 {
-    padding: 25px 4vw;
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
 }
 
+#category-filters
+{
+    display: flex;
+    flex-direction: column;
+}
